@@ -11,5 +11,5 @@ def mult(a):
         i *= element
         print "multiplication is",i
 mult(a)
-        
+print sum([1,2,3,4,5])
     
