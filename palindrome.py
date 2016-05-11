@@ -5,6 +5,7 @@ def is_palindrome(a):
        pal = i+pal
        if pal == a:
            print"is palindrome"
-       else:
-           print"is not palindrome"
+       elif pal != a and len(a) == len(pal):
+          print"is not palindrome"
+           
 is_palindrome(a)
