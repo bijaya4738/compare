@@ -14,12 +14,13 @@ else:
     y = x
 def is_member():
     i = -1
-    while i < n:
+    for index in list_a:
         i += 1
         if y == list_a[i]:
             print"true"
             break
-    else:
-        print"false"
+        elif y!= list_a[i]:
+            print"false"
+            break
 is_member()
  
