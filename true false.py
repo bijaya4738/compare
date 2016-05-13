@@ -1,12 +1,25 @@
-a = ["ass",1,"ram",100,"hari"]
+length = input("enter length of list")
+list_a=[]
+for i in range(length):
+    a = raw_input()
+    if(a.isdigit()):
+        list_a.insert(i,float(a))
+    else:
+        list_a.insert(i,a)
+n = len(list_a)
 x = raw_input("input your value")
 if x.isdigit():
-        y = int(x)
+    y = int(x)
 else:
-        y = x
+    y = x
 def is_member():
-    if y == a[0] or y == a[1] or y == a[2] or y == a[3] or y == a[4]:
-        print "true"
+    i = -1
+    while i < n:
+        i += 1
+        if y == list_a[i]:
+            print"true"
+            break
     else:
-        print "false"
+        print"false"
 is_member()
+ 
