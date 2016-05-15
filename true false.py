@@ -6,21 +6,17 @@ for i in range(length):
         list_a.insert(i,float(a))
     else:
         list_a.insert(i,a)
-n = len(list_a)
 x = raw_input("input your value")
 if x.isdigit():
     y = int(x)
 else:
     y = x
-def is_member():
-    i = -1
-    for index in list_a:
-        i += 1
-        if y == list_a[i]:
-            print"true"
-            break
-        elif y!= list_a[i]:
-            print"false"
-            break
-is_member()
+def is_member(value,c_list):
+        for item in c_list:
+           if type(value) == type(item):
+                if value == item:
+                    return True
+                
+        return False
+print is_member(y,list_a)
  
