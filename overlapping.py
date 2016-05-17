@@ -17,7 +17,13 @@ for i in range(length):
 print list_a
 print list_b
 def is_member(x,y):
-    for 
+    for i in x:
+       for j in y:
+           if type(i)==type(j):
+               if i==j:
+                   return True
+    return False
+        
 print is_member(list_a,list_b)
     
 
