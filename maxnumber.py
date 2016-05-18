@@ -1,11 +1,15 @@
-def max_in(rangeof,element):
+def max_in():
     y=[]
-    a = rangeof
+    a = input("enter range")
     for i in range(a):
-        b = element
+        b = input("enter number")
         y.insert(i,b)
-    for element in y:
-            return max(y)
+    maxno = y[0]
+    for num in y:
+        if maxno < num:
+            maxno = num
+    return maxno
+print max_in()
 
     
     
