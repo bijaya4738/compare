@@ -6,6 +6,7 @@ def word_len(y):
         z.insert(i,a)
         if len(z)==len(y):
             print z
+            break
 word_len(y)
 
 
