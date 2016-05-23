@@ -1,4 +1,4 @@
-y=["bijay","wrufesh"]
+y=["bijay","asdfasdf","ram"]
 def word_len(y):
     z=[]
     for i in range(len(y)):
@@ -6,12 +6,12 @@ def word_len(y):
         z.insert(i,a)
         if len(z)==len(y):
             return z
-sum=0
+su=0
 for x in word_len(y):
-    sum=sum+x
-sum
-max=0
+    su=su+x
+su
+maxno=0
 for num in word_len(y):
-    max<num
-    max=num
-max
+    if maxno<num:
+        maxno=num
+maxno
